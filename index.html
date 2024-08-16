@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General container styling */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #e9deff;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Container hover effect */
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact button styling */
+        .contact-button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 20px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact button hover effect */
+        .contact-button:hover {
+            background-color: #2ecc71;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+        }
+
+        /* Contact button active effect */
+        .contact-button:active {
+            background-color: #1e8449;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+        }
+
+        /* Section title styling */
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2980b9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        /* Section hover effect */
+        .section:hover .section-title {
+            color: #3498db;
+        }
+
+        /* Address button styling */
+        .address-button {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Address button hover effect */
+        .address-button:hover {
+            background-color: #3498db;
+            transform: translateY(-2px);
+        }
+
+        /* General list styling */
+        li,
+        i {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* List item hover effect */
+        li:hover, i:hover {
+            color: #2980b9;
+            transform: translateX(10px);
+        }
+
+        /* Gradient background for body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 20px;
+            color: #444;
+        }
+
+        /* Hover effects for sections and boxes */
+        .section:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section .p-3:hover {
+            background-color: #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Rent Section -->
+        <div class="section mb-4">
+            <div class="p-3 rounded" style="background-color: #ecf0f1; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <span class="section-title d-flex align-items-center">
+                    <i class="fas fa-money-bill-wave" style="margin-right: 10px; color: #2980b9;"></i> Rent
+                </span>
+                <div class="d-flex justify-content-around" style="font-size: 18px; color: #34495e; margin-top: 10px;">
+                    <div><i class="fas fa-user" style="margin-right: 5px; color: #2980b9;"></i>Single Seater: <strong>INR 5000</strong></div>
+                    <div><i class="fas fa-users" style="margin-right: 5px; color: #2980b9;"></i> Double Seater: <strong>INR 6000</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advance Deposit Section -->
+        <div class="section mb-4">
+            <div class="p-3 rounded" style="background-color: #ecf0f1; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <span class="section-title d-flex align-items-center">
+                    <i class="fas fa-piggy-bank" style="margin-right: 10px; color: #2980b9;"></i> Advance Deposit Amount
+                </span>
+                <div class="d-flex justify-content-around" style="font-size: 18px; color: #34495e; margin-top: 10px;">
+                    <div><i class="fas fa-user" style="margin-right: 5px; color: #2980b9;"></i>Single Seater: <strong>INR 5000</strong></div>
+                    <div><i class="fas fa-users" style="margin-right: 5px; color: #2980b9;"></i> Double Seater: <strong>INR 6000</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lock-in Period Section -->
+        <div class="section mb-4">
+            <div class="d-flex justify-content-between align-items-center p-3 rounded" style="background-color: #ecf0f1; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <span class="section-title d-flex align-items-center">
+                    <i class="fas fa-calendar-alt" style="margin-right: 10px; color: #2980b9;"></i> Lock-in Period
+                </span>
+                <span style="font-size: 18px; color: #34495e;">1 Month</span>
+            </div>
+        </div>
+
+        <!-- Rules and Regulations Section -->
+        <div class="section mb-4" style="background: #f7f9f9; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+            <div class="section-title d-flex align-items-center mb-2">
+                <i class="fas fa-file-alt" style="margin-right: 10px; color: #2980b9;"></i> Rules and Regulations
+            </div>
+            <ul style="padding-left: 20px; line-height: 1.8; font-size: 16px; color: #7f8c8d;">
+                <li>Limited number of acquaintances are permitted.</li>
+                <li>Pay rent promptly for a positive landlord-tenant relationship.</li>
+                <li>Respect and care for the property; report maintenance issues promptly and avoid damage.</li>
+                <li>Friends are not permitted to stay overnight.</li>
+                <li>Give proper notice before moving out for smooth transitions.</li>
+            </ul>
+        </div>
+
+        <!-- Address Section -->
+        <div class="section mb-4" style="background: #f7f9f9; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+            <div class="section-title d-flex align-items-center mb-2">
+                <i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #2980b9;"></i> Address
+            </div>
+            <p style="font-size: 16px; color: #16a085; margin-bottom: 10px; font-weight: bold;">Schem no.91, Plot no.216, Malva Mill, Infront of Panchmukhi Hanuman Temple, Indore</p>
+            <a href="https://maps.google.com" target="_blank" class="address-button" style="text-decoration: none">
+                <i class="fas fa-map" style="margin-right: 10px; "></i> View on maps
+            </a>
+        </div>
+
+        <!-- Contact Section -->
+        <a href="tel:+918803229981" style="color: #fff; text-decoration: none; display: flex; justify-content: center;">
+            <div class="contact-button mt-4 text-center ">
+                <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> Owner Contact: +91 88032 29981
+            </div>
+        </a>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
